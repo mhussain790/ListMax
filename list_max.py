@@ -34,7 +34,3 @@ def list_max(a_list):
     else:
         a_list.pop(0)
     return list_max(a_list)
-
-
-temps = [5, 8, 3, 2]
-list_max(temps)
