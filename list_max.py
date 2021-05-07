@@ -4,27 +4,20 @@ Course: CS162
 Assignment: 6A
 """
 
-"""
-Write a recursive function named list_max that takes as its parameter 
-a list of numbers and returns the maximum value in the list. 
-You can assume the list contains at least one element. 
-If multiple elements of the list are tied for the maximum, 
-you would still return that value.
-
-You cannot call the built-in max() function.
-
-You may use default arguments and/or helper functions.
-
-Your recursive function must not:
-
-use any loops
-use any variables declared outside of the function
-use any mutable default arguments
-The file must be named: list_max.py
-"""
-
 
 def list_max(a_list):
+
+    """
+    Compares the first item to the second item in the list.
+    If the first item is greater than the second then it removes the second item.
+    If the second item is greater than the first then the first item is removed.
+    The list_max() function is called recursively to run through the list.
+
+    Once the list only contains 1 item, it returns the item from the list.
+
+    :param a_list:
+    :return: Max value in list
+    """
 
     if len(a_list) == 1:
         return a_list[0]
